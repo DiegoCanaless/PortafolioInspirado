@@ -1,9 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+
+nav a{
+    padding-top: 3vh;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.619);
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: 400;
+    
 }
 
 h1{
+    text-align: center;
+    margin-bottom: 3vh;
+    color: #A6A7A9;
+    font-size: 1.5rem;
+    font-weight: 900;
     white-space: pre-line;
+}
+
+.contenedorSeccion1{
+    width: 100%;
+    height: 100vh;
+    background-color: #212428;
+}
+
+.contenedorPresentacion{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: auto;
+    border-right: 1px solid #00ea946c;
+    border-radius: 15px;
+    padding: 15px 0px 15px 0px;
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: baseline;
+}
+
+.imgPresentacion{
+    width: 30vh;
+    height: 30vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1vh;
+}
+
+.contenedorPresentacion p {
+    font-size: 1rem;
+    color: #D8D9DB;
+    margin-bottom: 2vh;
+    
+}
+
+.contenedorRedes{
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    margin-bottom: 4vh;
+}
+
+
+.contenedorPresentacion button{
+    background-color: #00EA96;
+    padding: 7px 30px 7px ;
+    border-radius: 15px;
+    border: 1px black solid;
+    color: black;
+    font-weight: 700;
+}
+
+.bi{
+    font-size: 1.2rem;
+    background-color: #D8D9DB;
+    padding: 5px;
+    color: #4C4D50;
+    border-radius: 20px;
+    border: 1.5px solid black;
+}
+
+.descripcion{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #A6A7A9;
+}
+
+.flechaCascada{
+    position: absolute;
+    margin-left: 30vh;
+    margin-top: 5vh;
+    background-color: #00EA96;
+    animation: rebotar 2s infinite;
+    
+}
+
+@keyframes rebotar {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Inicio de seccion2 */
+
+.contenedorSeccion2{
+    width: 100%;
+    height: 100vh;
+    background-color: #1B2025;
 }
