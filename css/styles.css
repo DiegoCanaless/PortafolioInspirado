@@ -2,6 +2,7 @@
     --color-primario: #00FDA2;
     --color-fondo1: #212428;
     --color-gris: #DCDEE0;
+    --color-fondo2: #1B2025;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -16,7 +17,7 @@
     font-size: 1rem;
 }
 
-
+/* 1ra Seccion Hero */
 
 a{
     text-decoration: none;
@@ -46,7 +47,7 @@ nav a{
 
 .tarjetaPresentacion{
     width: 50vh;
-    margin-left: 10vh;
+    margin-left: 20vh;
     position: relative;
     bottom: 5px;
     padding: 0px 30px;
@@ -123,7 +124,7 @@ h1{
 
 .tarjetaTexto{
     margin: 10vh;
-    margin-left: 18px;
+    margin-left: h;
 
 }
 
@@ -166,14 +167,73 @@ h2{
     padding-bottom: 10px;
 }
 
-.design-text {
+.textoFinal {
     position: absolute;
     top: 50%;
     left: 67%;
     transform: translateY(-50%) rotate(-90deg);
-    font-size: 7.5rem;
+    font-size: 6rem;
     color: #00fda013;
     z-index: 1;
     white-space: nowrap;
     font-weight: 700;
 }
+
+/* 2ra Seccion Proyectos */
+
+.sectionProyectos{
+    width: 100%;
+    background-color: var(--color-fondo2);
+}
+
+h3{
+    text-align: center;
+    padding-top: 10vh;
+    color: var(--color-primario);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contenedorProyectos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10vh 20vh;
+}
+
+.tarjetaProyecto{
+    width: 60vh;
+    height: 35vh;
+    background-color: cornsilk;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 0px
+}
+
+.tarjetaProyecto img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+.tarjetaDescripcion{
+    padding: 10px 0px 10px 20px;
+    background-color: var(--color-primario);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tipoProyecto{
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: black;
+}
+
+h4{
+    color: black;
+    font-weight: 600;
+}
+
+/* 3ra Seccion Sobre Mi */
