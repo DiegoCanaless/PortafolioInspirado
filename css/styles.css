@@ -1,3 +1,9 @@
+:root{
+    --color-primario: #00FDA2;
+    --color-fondo1: #212428;
+    --color-gris: #DCDEE0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
@@ -6,9 +12,11 @@
     box-sizing: border-box;
     color: white;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
+    font-weight: 300;
+    font-size: 1rem;
 }
+
+
 
 a{
     text-decoration: none;
@@ -16,130 +24,156 @@ a{
 
 nav{
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 3vh;
+    justify-content: space-around;
+    width: 60vh;
+    margin: auto;
+    padding-top: 4vh;
+}
+
+.hero{
+    background-color: var(--color-fondo1);
+    width: 100%;
+    height: 100vh;
+}
+
+.hero .inicio{
+    color: var(--color-primario);
 }
 
 nav a{
-    padding-top: 3vh;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.619);
+    color: var(--color-gris);
 }
 
-h4{
-    font-size: 2rem;
-    font-weight: 400;
-    
+.tarjetaPresentacion{
+    width: 50vh;
+    margin-left: 10vh;
+    position: relative;
+    bottom: 5px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #00fda03f;
+    border-radius: 30px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+
+.tituloPresentacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 40vh;
 }
 
 h1{
-    text-align: center;
-    margin-bottom: 3vh;
-    color: #A6A7A9;
-    font-size: 1.5rem;
-    font-weight: 900;
-    white-space: pre-line;
+    font-weight: 500;
+    color: #dfdfe1;
 }
 
-.contenedorSeccion1{
-    width: 100%;
-    height: 100vh;
-    background-color: #212428;
+.tituloPresentacion p{
+    margin-bottom: 10px;
+    color: #b9babb;
+    font-weight: 600;
 }
 
-.contenedorPresentacion{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin: auto;
-    border-right: 1px solid #00ea946c;
-    border-radius: 15px;
-    padding: 15px 0px 15px 0px;
-    width: 70%;
+.tarjetaPresentacion img{
+    width: 80%;
+    margin-top: 2vh;
+}
+
+.correo{
+    margin-right: 30px;
     margin-bottom: 15px;
 }
 
-.presentacion{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: baseline;
-}
-
-.imgPresentacion{
-    width: 30vh;
-    height: 30vh;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 1vh;
-}
-
-.contenedorPresentacion p {
-    font-size: 1rem;
-    color: #D8D9DB;
-    margin-bottom: 2vh;
-    
-}
-
 .contenedorRedes{
+    margin: 3vh 0px;
     display: flex;
-    justify-content: center;
-    gap: 2vh;
-    margin-bottom: 4vh;
 }
 
+.contenedorIcon{
+    margin: 10px;
+    padding: 8px;
+    background-color: #E5E6E8;
+    border-radius: 30px;
+    border: 1px solid black;
+}
 
-.contenedorPresentacion button{
-    background-color: #00EA96;
-    padding: 7px 30px 7px ;
+.contenedorIcon .bi{
+    color: #2D3034;
+    font-size: 1.2rem;
+}
+
+.btnContratame{
+    padding: 8px 60px;
+    background-color: var(--color-primario);
     border-radius: 15px;
-    border: 1px black solid;
+    border: 1px solid black;
     color: black;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
-.bi{
-    font-size: 1.2rem;
-    background-color: #D8D9DB;
-    padding: 5px;
-    color: #4C4D50;
-    border-radius: 20px;
-    border: 1.5px solid black;
+.contHero{
+    display: flex;
+}
+
+.tarjetaTexto{
+    margin: 10vh;
+    margin-left: 18px;
+
+}
+
+h2{
+    white-space: preserve-breaks;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #A5A6A8;
 }
 
 .descripcion{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    color: #A6A7A9;
+    color: var(--color-gris);
+    margin-top: 50px;
+    font-size: 1.25rem;
+    font-weight: 100;
 }
 
-.flechaCascada{
-    position: absolute;
-    margin-left: 30vh;
-    margin-top: 5vh;
-    background-color: #00EA96;
-    animation: rebotar 2s infinite;
-    
+.contenedorCajasExperiencia{
+    display: flex;
+
 }
 
-@keyframes rebotar {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
-
-/* Inicio de seccion2 */
-
-.contenedorSeccion2{
-    width: 100%;
-    height: 100vh;
+.cajaExperiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 20px;
+    width: 160px;
     background-color: #1B2025;
+}
+
+.cajaExperiencia p{
+    margin: 0px;
+}
+
+.number{
+    color: var(--color-primario);
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.design-text {
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 7.5rem;
+    color: #00fda013;
+    z-index: 1;
+    white-space: nowrap;
+    font-weight: 700;
 }
