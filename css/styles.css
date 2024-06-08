@@ -3,6 +3,7 @@
     --color-fondo1: #212428;
     --color-gris: #DCDEE0;
     --color-fondo2: #1B2025;
+    --color-primario-opaco: #00fda081;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -37,12 +38,9 @@ nav{
     height: 100vh;
 }
 
-.hero .inicio{
-    color: var(--color-primario);
-}
-
 nav a{
     color: var(--color-gris);
+    transition-duration: 0.25s;
 }
 
 .tarjetaPresentacion{
@@ -97,10 +95,11 @@ h1{
 
 .contenedorIcon{
     margin: 10px;
-    padding: 8px;
+    padding: 5px 6px;
     background-color: #E5E6E8;
     border-radius: 30px;
     border: 1px solid black;
+    transition-duration: 0.25s;
 }
 
 .contenedorIcon .bi{
@@ -116,6 +115,7 @@ h1{
     color: black;
     font-weight: 700;
     margin-bottom: 30px;
+    transition-duration: 0.5s;
 }
 
 .contHero{
@@ -170,13 +170,34 @@ h2{
 .textoFinal {
     position: absolute;
     top: 50%;
-    left: 67%;
+    left: 73%;
     transform: translateY(-50%) rotate(-90deg);
     font-size: 6rem;
     color: #00fda013;
     z-index: 1;
     white-space: nowrap;
     font-weight: 700;
+}
+
+
+nav a:hover{
+    color: var(--color-primario);
+}
+
+.contenedorIcon:hover{
+    background-color: var(--color-primario);
+
+    .bi-facebook, .bi-linkedin, .bi-instagram, .bi-twitter{
+        color: #000000;
+    }
+    
+}
+
+.btnContratame:hover{
+    background-color: var(--color-gris);
+    color: var(--color-primario);
+    cursor: pointer;
+    text-shadow: 0 0 4px #000000;
 }
 
 /* 2ra Seccion Proyectos */
@@ -204,12 +225,12 @@ h3{
 .tarjetaProyecto{
     width: 60vh;
     height: 35vh;
-    background-color: cornsilk;
-    margin: 20px;
+    background-color: transparent;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    border: 0px
+    border: 0px;
+    transition-duration: 0.5s;
 }
 
 .tarjetaProyecto img{
@@ -231,9 +252,269 @@ h3{
     color: black;
 }
 
+.contenedorProyectos a{
+    margin: 30px;
+}
+
 h4{
     color: black;
     font-weight: 600;
 }
 
+.tarjetaProyecto:hover{
+    filter: opacity(0.5);
+}
+
+.textoWeb{
+    position: absolute;
+    transform: translateY(-50%) rotate(-90deg);
+    left: 88%;
+    font-size: 6rem;
+    color: #00fda013;
+    z-index: 1;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
 /* 3ra Seccion Sobre Mi */
+
+.Informacion{
+    background-color: var(--color-fondo1);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.contenedorInformacion{
+    display: flex;
+}
+.contenedorSobreMi{
+    width: 80vh;
+    margin-left: 30vh;
+}
+
+.contenedorSobreMi h3{
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+.contenedorSobreMi p{
+    margin-bottom: 5vh;
+    color: #A5A6A8;
+    font-weight: 100;
+}
+
+.contenedorSobreMi button{
+    padding: 10px 40px;
+    border-radius: 60px;
+    margin-top: 5vh;
+}
+
+.contenedorExperiencia{
+    padding-top: 10vh;
+    padding-left: 10vh;
+    width: 60vh;
+}
+
+.btnExperiencia{
+    background-color: transparent;
+    color: var(--color-primario);
+    border: 0.5px solid var(--color-primario);
+    padding: 8px 40px;
+    border-radius: 30px;
+    font-weight: 400;
+    transition-duration: 0.5s;
+    margin-bottom: 6vh;
+}
+
+.contenedorFechas{
+    display: flex;
+    flex-direction: column;
+    width: 55vh;
+}
+
+.contenedorTrabajos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5vh;
+}
+
+.contenedorFechas hr{
+    margin-top: 1vh;
+    color: var(--color-primario-opaco);
+    margin-bottom: 4vh;
+}
+
+.fechas{
+    color: var(--color-primario-opaco);
+    font-size: 0.9rem;
+}
+
+h5{
+    margin-bottom: 2vh;
+    font-weight: 500;
+}
+
+.nombreTrabajo{
+    font-size: 0.9rem;
+    color: #A5A6A8;
+}
+
+.contenedorTecnologias{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 10vh auto 0px auto;
+    padding-bottom: 10vh;
+}
+
+.iconTecnologica{
+    background-color: var(--color-fondo2) ;
+    padding: 25px 30px;
+    border-radius: 15px;
+    border: 1px solid var(--color-primario-opaco);
+    border-bottom: none;
+    border-left: none;
+}
+
+/* 4ra Seccion Reseñas */
+
+.sectionReseñas{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-fondo2);
+}
+
+.carrusel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.reseniaContenedor{
+    width: 50%;
+    height: 60vh;
+    border-radius: 15px;
+    background-color: var(--color-fondo1);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid var(--color-primario);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.reseniaContenedor img{
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 40%;
+}
+
+.contenedorEstrellas{
+    display: flex;
+    align-items: baseline;
+}
+
+.bi-star-fill{
+    color: #FFB508;
+    margin-top: 5vh;
+    font-size: 1.2rem;
+    margin: 2px;
+
+}
+
+.bi-quote{
+    font-size: 6rem;
+    color: #a5a6a849;
+}
+
+
+.contIconos{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.resenia{
+    width: 50%;
+    padding: 40px;
+    padding-top: 0px;
+}
+
+.textoResenia{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #00fda0ce;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.resenia a{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #00fda0;
+    line-height: 24px;
+}
+
+.persona{
+    display: flex;
+    justify-content: space-between;
+}
+
+.personaNombre{
+    font-size: 0.8rem;
+    color: #A5A6A8;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.personaTrabajo{
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: #7f7f9a;
+}
+
+.textoDestacado{
+    text-align: end;
+    left: 87vh;
+    
+    position: absolute;
+    font-size: 2.5rem;
+    color: #000000;
+    z-index: 1;
+    font-weight: 100;
+    white-space: preserve-breaks ;
+}
+
+.flechaIzquierda{
+    background-image: url(../img/izquierdaNoActivo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    scale: 0.5;
+    transition-duration: 0.5s;
+    
+}
+
+.flechaIzquierda:hover{
+    background-image: url(../img/izquierdaActivo.png);
+}
+
+.flechaDerecha{
+    background-image: url(../img/derechaNoActivo.png);
+    width: 100px;
+    height: 100px;
+    scale: 0.5;
+    transition-duration: 0.5s;
+}
+
+.flechaDerecha:hover{
+    background-image: url(../img/derechaActivo.png);
+}
+
+
+/* 5ra Seccion Contactanos */
