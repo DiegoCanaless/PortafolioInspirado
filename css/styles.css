@@ -8,6 +8,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Web hecha en pantalla de 1366x768px*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -194,8 +196,9 @@ nav a:hover{
 }
 
 .btnContratame:hover{
-    background-color: var(--color-gris);
+    background-color: var(--color-fondo2);
     color: var(--color-primario);
+    border: 1px solid var(--color-primario);
     cursor: pointer;
     text-shadow: 0 0 4px #000000;
 }
@@ -387,7 +390,7 @@ h5{
 
 .carrusel{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 10vh;
 }
@@ -518,3 +521,612 @@ h5{
 
 
 /* 5ra Seccion Contactanos */
+
+.sectionFormulario{
+    background-color: var(--color-fondo1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20vh;
+}
+
+.formDestacado{
+    color: var(--color-primario);
+    font-size: 3rem;
+}
+
+.formDestacado2{
+    color: #A5A6A8;
+    font-size: 2.3rem;
+}
+
+.informacionDeContacto{
+    width: 40%;
+}
+
+.textoFormulario{
+    margin-top: 4vh;
+    color: #A5A6A8;
+}
+
+.bi-envelope{
+    color: var(--color-primario);
+    background-color: var(--color-fondo2);
+    margin: 5vh 2vh 0px 0px ;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.contenedorCorreo{
+    display: flex;
+    align-items: baseline;
+}
+
+.correoFormulario{
+    margin: 7vh 5vh 0px 0px;
+    color: #A5A6A8;
+    font-size: 0.9rem;
+}
+
+.contenedorTelefono{
+    margin: 5vh 5vh 0px 0px;
+}
+
+.bi-telephone{
+    color: var(--color-primario);
+    background-color: var(--color-fondo2);
+    margin: 5vh 2vh 0px 0px ;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.redesContacto{
+    margin: 5vh 0px 0px 0px;
+}
+
+.iconosContacto{
+    color: var(--color-primario);
+    margin: 20px 20px 0px 0px;
+    padding: 10px;
+    background-color: var(--color-fondo2);
+    border-radius: 30px;
+}
+
+.contenedorFormulario{
+    background-color: var(--color-fondo2);
+    width: 75vh;
+    height: 70vh;
+    border-radius: 15px;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloFormulario{
+    color: var(--color-primario);
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+input{
+    width: 95%;
+    margin-top: 5vh;
+    background-color: transparent;
+    border: 1px solid #41454b;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    color: #5b6169;
+    outline: none;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 95%;
+    margin-top: 5vh;
+    background-color: transparent;
+    border: 1px solid #41454b;
+    height: 80px;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    color: #5b6169;
+    padding: 10px;
+    outline: none;
+}
+
+.btnFormulario{
+    align-self: flex-start;
+    margin: 4vh 0px 0px 2vh;
+    width: 140px;
+    padding: 13px 0px ;
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-fondo2);
+    border-radius: 25px;
+    color: black;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.btnFormulario:hover{
+    background-color: var(--color-fondo1);
+    color:#00fda0
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: var(--color-fondo2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerPerfil{
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.footerPerfil img{
+    margin-right: 1vh;
+    width: 25%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* 1280x720*/
+@media (min-width: 1280px) {
+    .tarjetaPresentacion{
+        margin-left: 10vh;
+        margin: 5vh 0px 0px 10vh;
+    }
+
+    .tarjetaTexto{
+        margin: 10vh 0px 0px 4vh;
+    }
+
+    .textoFinal{
+        left: 70%;
+    }
+
+    .contenedorProyectos{
+        justify-content: center;
+        padding: 10vh 0px;
+    }
+
+    .tarjetaProyecto{
+        width: 70vh;
+    }
+
+    .contenedorProyectos a{
+        margin: 30px;
+    }
+
+    .textoWeb{
+        left: 85%;
+    }
+
+    .sectionProyectos, .Informacion, .sectionFormulario{
+        height: auto;
+    }
+
+    .hero{
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    .sectionReseñas{
+        height: auto;
+        padding-bottom: 20vh;
+    }
+
+    .contenedorInformacion{
+        justify-content: center;
+        height: auto;
+    }
+
+    .contenedorSobreMi{
+        margin-left: 15vh;
+        width: 40%;
+    }
+
+    .contenedorExperiencia{
+        padding: 15vh 0px 0px 10vh;
+        width: 40%;
+    }
+
+    .carrusel{
+        margin-top: 5vh;
+    }
+    .sectionFormulario{
+        padding: 10vh;
+    }
+
+    footer{
+        padding-bottom: 5vh;
+        height: auto;
+    }
+
+    .textoResenia{
+        font-size: 1.1rem;
+    }
+
+    .personaNombre{
+        font-size: 0.9rem;
+    }
+
+    .personaTrabajo{
+        font-size: 0.7rem;
+    }
+
+    .textoDestacado{
+        left: 74vh;
+    }
+
+}
+
+
+/*1440x900 */
+@media (min-width: 1440px) {
+
+
+    .bi-telephone, .bi-envelope{
+
+        font-size: 1.5rem;
+    }
+
+    .tarjetaPresentacion{
+        margin: 5vh 0px 0px 5vh;
+        width: 45vh;
+    }
+
+    nav{
+        width: 55vh;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    nav a{
+        font-size: 1.2rem;
+    }
+
+    .tituloPresentacion p{
+        font-size: 1.2rem;
+    }
+
+    .correo{
+        font-size: 1.2rem;
+    }
+
+    .contenedorIcon .bi{
+        color: #2D3034;
+        font-size: 1.5rem;
+    }
+
+    .btnContratame{
+        padding: 12px 60px;
+        border-radius: 30px;
+        font-size: 1.2rem;
+    }
+
+    .cajaExperiencia {
+        font-size: 1.4rem;
+        margin: 4vh 2vh 0px 0px;
+    }
+
+    .textoFinal{
+        left: 75%;
+    }
+
+    .contenedorProyectos{
+        padding-top: 5vh;
+    }
+
+    h3{
+        font-size: 2.9rem;
+    }
+    .tarjetaProyecto{
+        width: 65vh;
+    }
+
+    .textoWeb{
+        left: 89%;
+    }
+
+    .contenedorSobreMi{
+        margin-left: 0vh;
+    }
+    
+    .contenedorExperiencia{
+        padding: 15vh 0px 0px 5vh;
+    }
+
+    .contenedorSobreMi p{
+        font-size: 1.3rem;
+        margin-bottom: 2vh;
+        line-height: 40px;
+    }
+
+    .contenedorSobreMi button{
+        padding: 15px 50px;
+    }
+
+    .btnExperiencia{
+        padding: 15px 50px;
+        border-radius: 40px;
+        margin-bottom: 4vh;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+
+    .nombreTrabajo{
+        font-size: 1rem;
+    }
+
+    .fechas{
+        font-size: 1rem;
+    }
+
+    .iconTecnologica{
+        scale: 1.2;
+    }
+
+    .iconTecnologica img{
+        scale: 1.2;
+    }
+
+    .bi-star-fill{
+        scale: 1.2;
+        margin: 4px;
+    }
+
+    .textoResenia{
+        font-size: 1.2rem;
+    }
+
+    .personaNombre{
+        font-size: 1rem;
+    }
+
+    .personaTrabajo{
+        font-size: 0.8rem;
+    }
+
+    .reseniaContenedor{
+        height: auto;
+    }
+
+    .textoDestacado{
+        left: 67vh;
+        font-size: 2.7rem;
+    }
+
+    .contenedorFormulario{
+        width: 60vh;
+        padding: 4vh 2vh;
+        height: auto;
+    }
+
+    input, textarea{
+        font-size: 1.1rem;
+    }
+
+    .correoFormulario{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .textoFormulario{
+        font-size: 1.2rem;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .formDestacado, .formDestacado2{
+        font-weight: 500;
+    }
+
+    footer p{
+        font-size: 1.2rem;
+    }
+    .footerPerfil{
+        width: 15%;
+    }
+
+    .iconosContacto{
+        font-size: 1.2rem;
+    }
+}
+
+
+/* 1920x1080 */
+
+@media (min-width: 1920px) {
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    .tarjetaPresentacion{
+        width: 55vh;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .tituloPresentacion p{
+        font-size: 1.6rem;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+
+    .correo{
+        font-size: 1.6rem;
+    }
+
+    .seguir{
+        font-size: 1.6rem;
+    }
+
+    .descripcion{
+        font-size: 1.5rem;
+    }
+
+    .cajaExperiencia p{
+        font-size: 1.3rem;
+    }
+
+    .cajaExperiencia .number{
+        font-size: 3rem;
+    }
+    
+    .contenedorIcon .bi{
+        font-size: 2rem;
+    }
+
+    .contenedorIcon{
+        padding: 10px 12px;
+    }
+
+    .btnContratame{
+        padding: 16px 65px;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .textoFinal{
+        left: 81%;
+    }
+
+    .tipoProyecto{
+        font-size: 1.4rem;
+    }
+
+    h4{
+        font-size: 1.8rem;
+    }
+    
+    h3{
+        font-size: 3rem;
+    }
+
+    .contenedorSobreMi p{
+        font-size: 1.6rem;
+    }
+
+    .contenedorExperiencia{
+        padding: 9vh 0px 15px 5vh;
+    }
+
+    .btnExperiencia{
+        font-size: 1.5rem;
+    }
+
+    h5{
+        font-size: 1.5rem;
+    }
+
+    .nombreTrabajo, .fechas{
+        font-size: 1.2rem;
+    }
+
+    .contenedorTecnologias{
+        margin: 12vh auto 0px auto;
+    }
+
+    .iconTecnologica{
+        scale: 1.4;
+    }
+
+    .iconTecnologica img{
+        scale: 1.4;
+    }
+
+    .bi-star-fill{
+        scale: 1.5;
+        margin: 0px 15px 10px 0px;
+    }
+
+    .textoResenia{
+        font-size: 1.5rem;
+        line-height: 35px;
+        margin: 3vh 0px 5vh 0px;
+    }
+
+    .resenia a{
+        font-size: 1.5rem;
+        
+    }
+
+    .personaNombre{
+        font-size: 1.3rem;
+    }
+
+    .personaTrabajo{
+        font-size: 1rem;
+    }
+
+    .textoDestacado{
+        left: 72vh;
+        font-size: 4rem;
+    }
+
+    .formDestacado{
+        font-size: 4rem;
+    }
+
+    .formDestacado2{
+        font-size: 3.5rem;
+    }
+
+    .textoFormulario{
+        font-size: 1.5rem;
+    }
+
+
+    .bi-telephone, .bi-envelope{
+        margin: 5vh 2vh 0px 0px ;
+        padding: 13px;
+        font-size: 1.6rem;
+    }
+
+    .correoFormulario{
+        font-size: 1.3rem;
+    }
+
+    .iconosContacto{
+        font-size: 1.4rem;
+    }
+
+    input, textarea{
+        font-size: 1.3rem;
+    }
+
+    .btnFormulario{
+        font-size: 1.1rem;
+        padding: 16px ;
+        width: 150px;
+    }
+    
+    footer p{
+        font-size: 1.4rem;
+    }
+
+}
+
