@@ -18,6 +18,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
 
 /* 1ra Seccion Hero */
@@ -137,6 +138,7 @@ h2{
 }
 
 .descripcion{
+    white-space: preserve-breaks;
     color: var(--color-gris);
     margin-top: 50px;
     font-size: 1.25rem;
@@ -1755,7 +1757,7 @@ footer{
     .textoDestacado{
         display: block;
         left: 67vh;
-        top: 435vh;
+        top: 445vh;
         font-size: 3.5rem;
     }
 
@@ -1858,13 +1860,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
 /*1440x900 */
 @media (min-width: 1440px) {
 
@@ -1928,7 +1923,7 @@ footer{
 
     .textoDestacado{
         left: 64vh;
-        top: 381vh;
+        top: 391vh;
     }
 
 
@@ -2084,6 +2079,136 @@ footer{
 /* 1920x1080 */
 
 @media (min-width: 1920px) {
+
+    .textoFinal{
+        left: 70%;
+        font-size: 9rem;
+    }
+
+    nav{
+        width: 60vh;
+    }
+
+    .contenedorExperiencia{
+        height: 37vh;
+    }
+
+
+    .nombreTrabajo, .fechas{
+        font-size: 1.4rem;
+    }
+
+    h5{
+        font-size: 1.6rem;
+    }
+
+    .iconTecnologica{
+        scale: 1.6;
+    }
+
+    .iconTecnologica img{
+        scale: 1.4;
+    }
+
+    .bi-star-fill{
+        scale: 1.2;
+        margin: 0px 15px 10px 0px;
+    }
+
+    .textoResenia{
+        font-size: 2.5rem;
+        line-height: 50px;
+        margin: 3vh 0px 5vh 0px;
+    }
+
+    .resenia{
+        width: 50%;
+    }
+
+    .resenia a{
+        font-size: 2.5rem;
+        
+    }
+
+    .personaNombre{
+        font-size: 1.6rem;
+    }
+
+    .personaTrabajo{
+        font-size: 1.4rem;
+    }
+
+    .textoDestacado{
+        left: 64vh;
+        top: 380vh;
+        font-size: 6rem;
+    }
+
+    .formDestacado{
+        font-size: 4.5rem;
+    }
+
+    .formDestacado2{
+        font-size: 4rem;
+    }
+
+    .textoFormulario{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .informacionDeContacto{
+        width: 50%;
+    }
+
+    .bi-telephone, .bi-envelope{
+        margin: 5vh 2vh 0px 0px ;
+        padding: 20px;
+        font-size: 3rem;
+    }
+
+    .correoFormulario{
+        font-size: 1.6rem;
+    }
+
+    .iconosContacto{
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+
+    .contenedorFormulario{
+        height: 75vh;
+    }
+
+    .tituloFormulario{
+        font-size: 3rem;
+        margin-bottom: 5vh;
+        margin-top: 2vh;
+    }
+
+    input{
+        margin-bottom: 2vh;
+        height: 75px;
+    }
+
+    textarea{
+        height: 150px;
+    }
+
+    input, textarea{
+        font-size: 1.5rem;
+    }
+
+    .btnFormulario{
+        font-size: 1.5rem;
+        padding: 18px ;
+        width: 250px;
+        height: 90px;
+        text-align: center;
+    }
+
+
+    
     nav a{
         font-size: 1.5rem;
     }
@@ -2138,10 +2263,6 @@ footer{
         font-size: 1.6rem;
     }
 
-    .textoFinal{
-        left: 81%;
-    }
-
     .tipoProyecto{
         font-size: 1.4rem;
     }
@@ -2158,98 +2279,12 @@ footer{
         font-size: 1.6rem;
     }
 
-    .contenedorExperiencia{
-        padding: 9vh 0px 15px 5vh;
-    }
-
     .btnExperiencia{
         font-size: 1.5rem;
     }
 
-    h5{
-        font-size: 1.5rem;
-    }
-
-    .nombreTrabajo, .fechas{
-        font-size: 1.2rem;
-    }
-
     .contenedorTecnologias{
         margin: 12vh auto 0px auto;
-    }
-
-    .iconTecnologica{
-        scale: 1.4;
-    }
-
-    .iconTecnologica img{
-        scale: 1.4;
-    }
-
-    .bi-star-fill{
-        scale: 1.5;
-        margin: 0px 15px 10px 0px;
-    }
-
-    .textoResenia{
-        font-size: 1.5rem;
-        line-height: 35px;
-        margin: 3vh 0px 5vh 0px;
-    }
-
-    .resenia a{
-        font-size: 1.5rem;
-        
-    }
-
-    .personaNombre{
-        font-size: 1.3rem;
-    }
-
-    .personaTrabajo{
-        font-size: 1rem;
-    }
-
-    .textoDestacado{
-        left: 72vh;
-        font-size: 4rem;
-    }
-
-    .formDestacado{
-        font-size: 4rem;
-    }
-
-    .formDestacado2{
-        font-size: 3.5rem;
-    }
-
-    .textoFormulario{
-        font-size: 1.5rem;
-    }
-
-
-    .bi-telephone, .bi-envelope{
-        margin: 5vh 2vh 0px 0px ;
-        padding: 13px;
-        font-size: 1.6rem;
-    }
-
-    .correoFormulario{
-        font-size: 1.3rem;
-    }
-
-    .iconosContacto{
-        font-size: 1.4rem;
-    }
-
-    input, textarea{
-        font-size: 1.3rem;
-    }
-
-    .btnFormulario{
-        font-size: 1.1rem;
-        padding: 16px ;
-        width: 150px;
     }
     
     footer p{
