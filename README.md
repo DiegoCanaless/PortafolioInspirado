@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # Designer Portfolio - Responsive Web Design
 Este proyecto es una adaptación del diseño de portafolio de un diseñador subido en <a href="https://www.behance.net/gallery/198171699/Designer-Portfolio-design?tracking_source=search_projects%7CPortfolio+programmer&l=281">Behance.</a> El objetivo principal fue crear una página web responsive que mantuviera la esencia del diseño original mientras se aseguraba una experiencia de usuario óptima en diversas resoluciones de pantalla.
 
@@ -51,4 +48,3 @@ Imaginación y adaptación del diseño para múltiples dispositivos.
 <h2>Uso</h2>
 Explora la página y ajusta el tamaño de la ventana del navegador para ver cómo se adapta el diseño a diferentes resoluciones de pantalla. Asegúrate de revisar las resoluciones clave: 320x480, 480x640, 768x1024, 1024x768, 1280x720, 1366x769, 1440x900, y 1920x1080.
 
->>>>>>> 2da4acd6c0be131c38072725082ffd55c3b8696e
